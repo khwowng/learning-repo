@@ -1,0 +1,17 @@
+body {
+  background-color: #eee;
+  padding: 5%;
+}
+.preview {
+  background-color: #fff;
+  height: 500px;
+  overflow-y:auto
+}
+
+textarea {
+  height: 500px;
+}
+
+img {
+  width: 70%;
+}
