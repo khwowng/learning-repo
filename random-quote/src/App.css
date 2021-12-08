@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper {
+  height: 100vh;
+}
+
+#quote-box {
+  min-width: 400px;
+}
