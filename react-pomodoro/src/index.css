@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #4a69bd;
+  text-align: center;
+  color: white;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.timer-container {
+  margin: 20px;
+}
+
+span {
+  font-size: 40px;
+  margin: 0 10px;
+  width: 40px;
+}
+
+.clock-container {
+  background-color: #6a89cc;
+  border-radius: 10px;
+  border: white 2px solid;
+  padding: 20px;
+  margin: 0 15px;
+}
+
+.clock-container span {
+  font-size: 85px;
+}
+
+button {
+  margin: 10px;
+}
+
+.clock-container button {
+  border: white 1px solid;
+  color: white;
+  margin: 0 15px;
+}
