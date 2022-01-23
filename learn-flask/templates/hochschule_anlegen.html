@@ -1,0 +1,81 @@
+{% extends 'base.html' %} {% block title %} Hochschule {% endblock %} {% block
+import %} {% endblock %} {% block content %}
+<h1 class="text-center m-4">Hochschule Anlegen</h1>
+<div class="container-fluid d-flex">
+  <div class="col-md-4 bg-light p-4" id="institute_info">
+    <!-- main construct for modal to add new institute -->
+    <h3>Hochschule anlegen</h3>
+    <label for="modal_eng">Englische Bezeichnung</label><br />
+    <input type="text" id="modal_eng" name="mod_eng" /><br />
+    <label for="modal_country">Land</label>
+    <br />
+    <select
+      id="modal_country"
+      class="filter_country"
+      name="mod_country"
+    ></select
+    ><br />
+    <label for="modal_local">Lokale Bezeichnung</label><br />
+    <input type="text" id="modal_local" name="mod_local" /><br />
+    <label for="modal_adr">Adresse</label><br />
+    <input type="text" id="modal_adr" name="mod_adr" /><br />
+    <!-- <label for="modal_ws">Website</label>
+            <input type="text" id="modal_ws" name="mod_ws"><br>  -->
+    <label for="md_add_homepage">Homepage</label><br />
+    <input type="text" id="md_add_homepage" /><br />
+    <label for="modal_ec">Erasmus-Code</label><br />
+    <input type="text" id="modal_ec" name="mod_ec" /><br />
+    <label for="modal_ntzn">Notizen</label><br />
+    <input type="text" id="modal_ntzn" name="mod_ntzn" /><br />
+    <label for="modal_anz">Öffentlich anzeigen?</label><br />
+    <input
+      class="my_check"
+      type="checkbox"
+      id="modal_anz"
+      name="mod_anz"
+    /><br />
+  </div>
+  <div class="col-md-4 bg-secondary p-4" id="ansprechperson">
+    <h3>Ansprechperson</h3>
+    <label for="">Titel</label><br />
+    <input type="text" id="add_title" /><br />
+    <label for="">Vorname</label><br />
+    <input type="text" id="add_firstname" /><br />
+    <label for="">Nachname</label><br />
+    <input type="text" id="add_lastname" /><br />
+    <label for="">Geschlecht</label><br />
+    <select id="add gender">
+      <option value="0">Männlich</option>
+      <option value="1">Weiblich</option>
+      <option value="2">Divers</option></select
+    ><br />
+    <label for="">Funktion</label><br />
+    <input type="text" id="add_function" /><br />
+    <label for="">Telefonnummer</label><br />
+    <input type="text" id="add_tel_prv" /><br />
+    <label for="">Email</label><br />
+    <input type="text" id="add_mail_prv" /><br />
+  </div>
+  <div class="col-md-4 bg-light p-4" id="right">
+    <h3>International Office</h3>
+    <label for="int_off_name">Name</label><br />
+    <input type="text" id="int_off_name" /><br />
+    <label for="int_off_tel">Telefon</label><br />
+    <input type="text" id="int_off_tel" /><br />
+    <label for="int_off_mail">Email</label><br />
+    <input type="text" id="int_off_mail" /><br />
+    <label for="int_off_hp">Homepage</label><br />
+    <input type="text" id="int_off_hp" /><br />
+    <h3>Partnerschaft</h3>
+    <label for="">Vertragstyp</label><br />
+    <select id="add_agreement" class="fil_agree"></select
+    ><br /><br />
+    <a href="#ex2" rel="modal:close"
+      ><button type="submit" id="mod_add_institute">Speichern</button></a
+    >
+    <a href="#ex2" rel="modal:close"
+      ><button id="leave_mod">Abbrechen</button></a
+    >
+  </div>
+</div>
+{% endblock %}

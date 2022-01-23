@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block title %} Mentor {% endblock %} {% block
+import %} {% endblock %} {% block content %}
+<div class="container w-75">
+  <h1 class="text-center m-4">Mentor</h1>
+  <table class="table table-hover table-light">
+    <thead class="thead-dark">
+      <tr>
+        <!-- Your Columns HERE -->
+        <th scope="col">Name</th>
+        <th scope="col">Vorname</th>
+        <th scope="col">Fakultät</th>
+        <th scope="col">Bearbeiten</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name 1</td>
+        <td>Vorname 1</td>
+        <td>Fakultät 1</td>
+        <td>
+          <button class="btn btn-outline btn-light">
+            <i class="fas fa-pen-alt"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Name 2</td>
+        <td>Vorname 2</td>
+        <td>Fakultät 2</td>
+        <td>
+          <button class="btn btn-outline btn-light">
+            <i class="fas fa-pen-alt"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
