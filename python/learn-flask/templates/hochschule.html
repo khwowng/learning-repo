@@ -2,49 +2,43 @@
 import %} {% endblock %} {% block content %}
 <div class="container w-75">
   <h1 class="text-center m-4">Hochschule</h1>
-  <div id="FilterAll">
-    <!-- div for every filter needed -->
-    <form id="filter_form" action="">
+  <!-- div for every filter needed -->
+  <div id="filter" class="d-flex justify-content-around m-2">
+    <form class="d-flex justify-content-between">
       <select
-        id="fc"
-        class="filter form-select filter_country"
+        id="filter_country"
+        class="form-select m-2 filter_country"
         name="filter_country"
       >
-        <option value="none">-Land-</option>
+        <option value="none">Land</option>
       </select>
-      <select id="fil_fac" name="filter_fac" class="filter form-select">
-        <option value="none">-Fakultät-</option>
+      <select id="fil_fac" name="filter_fac" class="form-select m-2">
+        <option value="none">Fakultät</option>
       </select>
-      <select id="fil_shown" name="filter_shown" class="filter form-select">
-        <option value="none">-Anzeige extern-</option>
-        <option value="y">Ja</option>
-        <option value="n">Nein</option>
-      </select>
-      <select id="fil_act" name="filter_activity" class="filter form-select">
-        <option value="none">-Aktiv-</option>
+      <select id="fil_act" name="filter_activity" class="form-select m-2">
+        <option value="none">Aktiv</option>
         <option value="y">Ja</option>
         <option value="n">Nein</option>
       </select>
       <select
         id="fil_agree"
         name="filter_agreetype"
-        class="filter form-select fil_agree"
+        class="form-select m-2 fil_agree"
       >
-        <option value="none">-Vertragstyp-</option>
+        <option value="none">Vertragstyp</option>
       </select>
-      <select id="sorting" name="sortby" class="filter form-select">
+      <select id="sorting" name="sortby" class="form-select m-2">
         <!-- implement sorting filter -->
         <option id="asc" value="d">Sortierung absteigend</option>
         <option id="desc" value="a">Sortierung aufsteigend</option>
       </select>
       <br />
-      <button id="fil_reset">Zurücksetzen</button>
+      <button id="fil_reset" class="btn btn-light btn-sm">Zurücksetzen</button>
     </form>
   </div>
-  <table class="table table-hover table-light text-center">
-    <thead class="thead-dark">
+  <table class="table table-hover">
+    <thead class="table-secondary">
       <tr>
-        <!-- Your Columns HERE -->
         <th class="tbl_column_huge">Name</th>
         <th class="tbl_column_small">Land</th>
         <th class="tbl_column_small">Verträge</th>

@@ -14,6 +14,10 @@ def mentor():
 def hochschule_bearbeiten():
     return render_template('hochschule_bearbeiten.html')
 
+@app.route('/partnerschaft/bearbeiten')
+def partnerschaft_bearbeiten():
+    return render_template('partnerschaft_bearbeiten.html')
+
 @app.route('/hochschule/anlegen')
 def hochschule_anlegen():
     return render_template('hochschule_anlegen.html')

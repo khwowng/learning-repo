@@ -1,0 +1,72 @@
+{% extends 'base.html' %} {% block title %} Partnerschaft {% endblock %} {%
+block import %} {% endblock %} {% block content %}
+<h1 class="text-center m-4 mb-0">Partnerschaft Bearbeiten</h1>
+<div class="container-fluid d-flex justify-content-center">
+  <!-- LEFT COLUMN -->
+  <div class="col-md-4 m-3">
+    <form class="p-2">
+      <div class="form-group">
+        <label for="edit_mod_fac">Fakultät</label>
+        <select class="form-control filter_country" name="edit_fil_country">
+          <option selected>Informatik</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="edit_mod_country">Mentor</label>
+        <select class="form-control filter_country" name="edit_fil_country">
+          <option selected>Prof. Dr. Anke</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="edit_modal_eng">Datum der Unterzeichnung</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="edit_modal_local">Gültigkeitsbeginn</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="edit_modal_adr">Gültigkeitsende</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="edit_modal_ntzn">Notizen</label>
+        <textarea type="text" class="form-control" rows="3"></textarea>
+      </div>
+    </form>
+  </div>
+  <!-- LEFT COLUMN -->
+  <div class="col-md-4 m-3">
+    <form class="p-2">
+      <div class="form-group">
+        <label>Incoming Plätze</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Incoming Zeitraum</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Studiengang</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Outgoing Plätze</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Outgoing Zeitraum</label>
+        <input type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Studiengang</label>
+        <input type="text" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-light">Speichern</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
